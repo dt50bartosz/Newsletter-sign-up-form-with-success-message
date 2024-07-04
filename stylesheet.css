@@ -1,0 +1,192 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-color: hsl(235, 31%, 29%);
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    max-width: 1200px; 
+    background-color: white; 
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+
+h1 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 20px;
+    width: 90%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    margin-left: auto;
+}
+
+ul li img {
+    margin-right: 1rem;
+}
+
+ul li p {
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.sign-up {
+    margin-top: 2rem;
+}
+
+form div:first-child {
+    margin-bottom: 10px;
+}
+
+.error-input {
+    background-color:hsl(3, 71%, 80%);
+    border-color: red;
+}
+
+.sign-up div:first-child {
+    display: inline-flex;
+    width: 80%;
+
+
+}
+
+#empty-email-text {
+    display: none;
+    padding: 0;
+    margin: 0;   
+    margin-left: auto;
+    margin-top: auto;
+    color: red;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px; 
+    font-size: 14px; 
+  }
+
+form input{
+    padding:15px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+
+button {
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:hsl(234, 29%, 20%);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 80%;
+}
+
+
+
+
+.success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px; 
+    max-width: 50%; 
+    margin: auto; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.success-message p {
+    width: 60%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.success-message button {
+    width: auto; 
+    padding: 10px 20px; 
+    margin: 10px 0; 
+    border: none; 
+    border-radius: 10px; 
+    background-color: hsl(234, 29%, 20%);
+    color: white; 
+    cursor: pointer; 
+}
+
+.success-message button:hover {
+    background-color: #0056b3; 
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        max-width: 100%; 
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .left, .right {
+        width: 100%; 
+    }
+
+    h1{
+        margin-top: 2rem;
+    }
+
+    .mobile{
+        display: flex;
+        width: 100%;
+        
+    }
+
+    .desktop{
+        display: none;
+    } 
+
+  
+
+
+    .left {
+        order: 2; 
+        padding: 2rem;
+    }
+}
