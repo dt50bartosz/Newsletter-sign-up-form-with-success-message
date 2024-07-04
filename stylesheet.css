@@ -62,10 +62,6 @@ form div:first-child {
     margin-bottom: 10px;
 }
 
-.error-input {
-    background-color:hsl(3, 71%, 80%);
-    border-color: red;
-}
 
 .sign-up div:first-child {
     display: inline-flex;
